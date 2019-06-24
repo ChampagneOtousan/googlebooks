@@ -14,3 +14,7 @@ nav ul li a {
 h2, p {
   margin: 5% 12%;
 }
+
+img {
+  justify-content: center;
+}

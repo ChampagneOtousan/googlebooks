@@ -6,8 +6,11 @@ get "/" do
 end
 
 get "/search" do
-  @book = GoogleBooks.search("#{params[:query]}")
-  @first = @book.first
+  book = GoogleBooks.search("#{params[:query]}")
+  first = book.first
+  @thebookauthor = first.authors
+  @thebookname = first.title
+  @thebookimage = first.image_link
   erb :search
 end
 
