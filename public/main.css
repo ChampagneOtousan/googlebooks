@@ -1,0 +1,16 @@
+body {
+  font: sans-serif;
+  background: rgb(158, 167, 159);
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+h2, p {
+  margin: 5% 12%;
+}

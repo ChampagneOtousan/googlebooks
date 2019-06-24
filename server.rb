@@ -6,6 +6,8 @@ get "/" do
 end
 
 get "/search" do
+  @book = GoogleBooks.search("#{params[:query]}")
+  @first = @book.first
   erb :search
 end
 
