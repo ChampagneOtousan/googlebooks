@@ -1,15 +1,13 @@
 <h2>Results</h2>
 
-<h2>Home</h2>
-
-<p>This is the homepage for our search engine</p>
-
 <form action="search" method="get">
-  <input name="query">
+  <input name="query" placeholder="Author or title">
   <button>Search</button>
 </form>
 
-<p>Here are the results of your search...</p>
-<p><%= @thebookname%></p>
-<p><%= @thebookauthor%></p>
-<img src="<%= @thebookimage%>">
+<div class="searchResult">
+  <p><%= @thebookname%></p>
+  <p><%= @thebookauthor%></p>
+  <img src="<%= @thebookimage%>">
+
+</div>
